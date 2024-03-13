@@ -3,7 +3,7 @@ import './CountryAccordion.scss';
 
 function CountryAccordion() {
   return (
-    <div>
+    <div className="countryAccordion">
       Country
     </div>
   )
