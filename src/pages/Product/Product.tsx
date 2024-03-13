@@ -2,12 +2,14 @@ import React from 'react'
 import './Product.scss';
 import ProductMain from './components/ProductMain/ProductMain';
 import ProductInformation from './components/ProductInformation/ProductInformation';
+import Hero from '../../components/Hero/Hero';
 
 function Product() {
   return (
-    <div>
+    <div className="product">
       <ProductMain/>
       <ProductInformation/>
+      <Hero/>
     </div>
   )
 }

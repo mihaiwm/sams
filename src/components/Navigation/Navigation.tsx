@@ -1,41 +1,81 @@
-import React from 'react'
-import './Navigation.scss';
+import React, { useState } from "react";
+import "./Navigation.scss";
 
 interface INavigation {
   isOpened: boolean;
   isMobile: boolean;
 }
 
-function Navigation({isOpened, isMobile}:INavigation) {
+function Navigation({ isOpened, isMobile }: INavigation) {
+  const [isExpand, setExpand] = useState(false);
 
-    return (
-      <nav className={`navigation ${
-        isOpened && isMobile
-          ? "navigation--opened"
-          : !isOpened && isMobile
-          ? "navigation--closed"
-          : ""
-      }`}>
-        {!isMobile &&
-        <div className="navigation__inputWrapper">
-          <input type="text" className="navigation__searchInput" placeholder='Search'/>
-        </div>
-        }
+  return (
+    <>
+      <nav
+        className={`navigation ${
+          isOpened && isMobile
+            ? "navigation--opened"
+            : !isOpened && isMobile
+            ? "navigation--closed"
+            : ""
+        }`}
+      >
+        {!isMobile && (
+          <div className="navigation__inputWrapper">
+            <input
+              type="text"
+              className="navigation__searchInput"
+              placeholder="Search"
+            />
+          </div>
+        )}
         <ul className="navigation__links">
-            <li className="navigation__link">Luggage</li>
-            <li className="navigation__link">Backpacks</li>
-            <li className="navigation__link">Bags</li>
-            <li className="navigation__link">Disney & Kids</li>
-            <li className="navigation__link">Personalisation</li>
+          <li className="navigation__link" onMouseEnter={() => setExpand(true)}>
+            Luggage
+          </li>
+          <li className="navigation__link" onMouseEnter={() => setExpand(true)}>
+            Backpacks
+          </li>
+          <li className="navigation__link" onMouseEnter={() => setExpand(true)}>
+            Bags
+          </li>
+          <li className="navigation__link" onMouseEnter={() => setExpand(true)}>
+            Disney & Kids
+          </li>
+          <li className="navigation__link" onMouseEnter={() => setExpand(true)}>
+            Personalisation
+          </li>
         </ul>
         <ul className="navigation__staticLinks">
-          <li className="navigation__link">Services</li>
-          <li className="navigation__link">The Brand</li>
+          <li
+            className="navigation__link"
+            onMouseEnter={() => setExpand(true)}
+            onMouseLeave={() => setExpand(false)}
+          >
+            Services
+          </li>
+          <li
+            className="navigation__link"
+            onMouseEnter={() => setExpand(true)}
+            onMouseLeave={() => setExpand(false)}
+          >
+            The Brand
+          </li>
         </ul>
-    </nav>
-    )
+      </nav>
 
+      {isExpand && !isMobile && (
+        <div
+          className="navigation__expanded"
+          onMouseLeave={() => setExpand(false)}
+        ></div>
+      )}
+
+      {(isOpened && isMobile) || (isExpand && !isMobile) ? (
+        <div className="overlay"></div>
+      ) : null}
+    </>
+  );
 }
-  
 
-export default Navigation
+export default Navigation;
