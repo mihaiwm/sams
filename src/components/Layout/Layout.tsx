@@ -12,9 +12,12 @@ function Layout({children}:ILayout) {
     <>
 			<Header/>
 				<main className="main">
-					{children}
+          <>
+            {children}
+            <Footer/>
+          </>
 				</main>
-			<Footer/>
+			
     </>
   )
 }

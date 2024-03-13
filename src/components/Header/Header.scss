@@ -2,8 +2,10 @@
 
 .header {
 	width: 100%;
-	height: 100%;
-
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: white;
 }
 
 .header__logo-wrapper {
@@ -14,6 +16,7 @@
 .header__logo {
 	min-width: 100%;
 	height: 100%;
+	cursor: pointer;
 }
 
 .header__topBar {
@@ -32,4 +35,8 @@
 
 .header__icon {
 	list-style: none;
+
+	&:hover {
+		cursor: pointer;
+	}
 }

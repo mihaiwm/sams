@@ -8,4 +8,10 @@
 
 html, body {
   height: 100%;
+  font-family: $font-primary;
 }
+
+.body--locked {
+  overflow-y: hidden;
+}
+

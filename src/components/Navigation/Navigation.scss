@@ -1,2 +1,94 @@
 @import '../../styles/main.scss';
 
+.navigation {
+  display: flex;
+	justify-content: space-between;
+	padding: 0 3.75rem;
+	width: 100%;
+	font-family: $font-primary;
+	font-size: .875rem;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	align-items: center;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.navigation--opened {
+	position: absolute;
+	top: 55px;
+	right: 0;
+	height: 100vh;
+	width: 100%;
+	max-width: 23.75rem;
+	padding-top: 1.25rem;
+	padding-inline: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #fff;
+}
+
+.navigation--opened .navigation__links {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.navigation--opened .navigation__link  {
+	text-transform: capitalize;
+	font-size: 1.125rem;
+	border: none;
+
+	&:hover {
+		border: none;
+	}
+}
+
+.navigation--opened .navigation__staticLinks {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 1.25rem;
+}
+
+.navigation--closed {
+  display: none;
+}
+
+.navigation__inputWrapper {
+
+}
+
+.navigation__searchInput {
+	padding: .3125rem 0 .3125rem 1.25rem;
+	border: 0;
+	border-bottom: 1px solid #c7c7c7;
+	font-size: 14px;
+
+	&:focus, &:active {
+		outline: none;
+	}
+
+}
+
+.navigation__links {
+	display: flex;
+}
+
+.navigation__staticLinks {
+	display: flex;
+}
+
+.navigation__link {
+	list-style: none;
+	padding: 1rem .625rem.75rem;
+	text-transform: uppercase;
+	border-bottom: 4px solid transparent;
+	white-space: nowrap;
+
+
+	&:hover {
+		border-bottom: 4px solid #000;
+		cursor: pointer;
+	}
+}

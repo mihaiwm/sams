@@ -1,0 +1,60 @@
+@import '../../../../styles/main.scss';
+
+.productInformation {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	padding: 3.125rem 3.75rem;
+}
+
+.productInformation__title {
+	padding-bottom: .9375rem;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.productInformation__description {
+	padding: 0 3.75rem 1.5625rem 0;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.productInformation__adsWrapper {
+	display: block;
+	max-width: 500px;
+}
+
+.productInformation__ads {
+	display: block;
+	width: 100%;
+}
+
+.productInformation__content {
+	padding-top: .625rem;
+}
+
+@media screen and (max-width: 1260px) {
+	.productInformation {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.productInformation {
+		grid-template-columns: 1fr;
+	}
+
+	.productInformation__description {
+		padding: 1.5625rem 0;
+	}
+
+	.productInformation__leftSide {
+		padding-bottom: 1.875rem;
+	}
+
+	.productInformation__adsWrapper {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+
