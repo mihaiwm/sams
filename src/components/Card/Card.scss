@@ -8,6 +8,10 @@
     &:hover {
         cursor: pointer;
     }
+
+    &:first-child {
+        padding-left: 3.75rem;
+    }
 }
 
 .card__visual {
