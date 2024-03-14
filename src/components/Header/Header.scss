@@ -40,3 +40,9 @@
 		cursor: pointer;
 	}
 }
+
+@media screen and (max-width:768px) {
+	.header__topBar {
+		padding-inline: 1.875rem;
+	}
+}

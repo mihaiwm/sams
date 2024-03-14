@@ -1,0 +1,32 @@
+@import '../../styles/main.scss';
+
+.benefit {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: .9375rem;
+	max-width: 40.625rem;
+}
+
+.benefit__imageWrapper {
+	max-width: 95%;
+}
+
+.benefit__image {
+	width: 100%;
+	height: 100%;
+}
+
+.benefit__title {
+	font-size: 2.25rem;
+	font-weight: 900;
+	letter-spacing: -0.5px;
+	line-height: 0.8;
+	text-transform: uppercase;
+	max-width: 90%;
+}
+
+.benefit__description {
+	font-size: 1rem;
+	max-width: 90%;
+}

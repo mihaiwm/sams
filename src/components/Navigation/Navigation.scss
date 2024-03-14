@@ -30,6 +30,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	background-color: #fff;
+	transition: 0.2s ease-in-out;
 }
 
 .navigation--opened .navigation__links {
@@ -56,7 +57,8 @@
 }
 
 .navigation--closed {
-  display: none;
+  right: -100%;
+  visibility: hidden;
 }
 
 .navigation__inputWrapper {
