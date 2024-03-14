@@ -35,3 +35,11 @@
 	font-size: 1rem;
 	max-width: 90%;
 }
+
+@media screen and (max-width: 768px) {
+	.benefit {
+		&:first-child {
+			padding-left: .9375rem;
+		}
+	}
+}
