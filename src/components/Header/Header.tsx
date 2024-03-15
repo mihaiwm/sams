@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import './Header.scss';
-import CountryAccordion from './components/CountryAccordion/CountryAccordion';
-import Navigation from '../Navigation/Navigation';
+import React, { useState } from "react";
+import "./Header.scss";
+import CountryAccordion from "./components/CountryAccordion/CountryAccordion";
+import Navigation from "../Navigation/Navigation";
 import { IoLocationOutline } from "react-icons/io5";
 import { AiOutlineUser, AiOutlineClose } from "react-icons/ai";
 import { SlBag } from "react-icons/sl";
@@ -18,40 +18,47 @@ function Header() {
   return (
     <div className="header">
       <div className="header__topBar">
-        {!isMobile ? <CountryAccordion/> : <CiSearch className="header__icon" size={22}/>}
-          <div className="header__logo-wrapper">
-              <img className="header__logo" src="https://www.samsonite.ro/ro/samsonite-bw.png" alt="samsonite-logo" />
-          </div>
-          <ul className="header__utilityIcons">
+        {!isMobile ? (
+          <CountryAccordion />
+        ) : (
+          <CiSearch className="header__icon" size={22} />
+        )}
+        <div className="header__logo-wrapper">
+          <img
+            className="header__logo"
+            src="https://www.samsonite.ro/ro/samsonite-bw.png"
+            alt="samsonite-logo"
+          />
+        </div>
+        <ul className="header__utilityIcons">
           {!isMobile && (
             <>
               <li className="header__icon header__locationIcon">
-                <IoLocationOutline size={20}/>
+                <IoLocationOutline size={20} />
               </li>
               <li className="header__icon header__userIcon">
-                <AiOutlineUser size={20}/>
+                <AiOutlineUser size={20} />
               </li>
             </>
-          )
-          }
-            <li className="header__icon header__bagIcon">
-              <SlBag size={20} />
-            </li>
-            {isMobile && !isOpened &&
+          )}
+          <li className="header__icon header__bagIcon">
+            <SlBag size={20} />
+          </li>
+          {isMobile && !isOpened && (
             <li className="header__icon header__menuIcon">
-              <RxHamburgerMenu size={24} onClick={() => setIsOpened(true)}/>
+              <RxHamburgerMenu size={24} onClick={() => setIsOpened(true)} />
             </li>
-            }
-            {isMobile && isOpened &&
+          )}
+          {isMobile && isOpened && (
             <li className="header__icon header__menuIcon">
-              <AiOutlineClose size={24} onClick={() => setIsOpened(false)}/>
+              <AiOutlineClose size={24} onClick={() => setIsOpened(false)} />
             </li>
-            }
-          </ul>
+          )}
+        </ul>
       </div>
-      <Navigation isOpened={isOpened} isMobile={isMobile}/>
+      <Navigation isOpened={isOpened} isMobile={isMobile} />
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

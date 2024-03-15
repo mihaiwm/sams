@@ -1,12 +1,12 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .main {
-    position: relative;
-    top: 6.5625rem;
+  position: relative;
+  top: 6.5625rem;
 }
 
 @media screen and (max-width: 1260px) {
-    .main {
-        top: 3.4375rem;
-    }
+  .main {
+    top: 3.4375rem;
+  }
 }

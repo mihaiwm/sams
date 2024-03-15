@@ -1,40 +1,37 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .carousel {
-    padding: 2.5rem 0 3.75rem 0;
+  padding: 2.5rem 0 3.75rem 0;
 
-    &:hover, &:active {
-        cursor: grabbing;
-        cursor: -moz-grabbing;
-        cursor: -webkit-grabbing;
-    }
+  &:hover,
+  &:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
 }
 
 .carousel__title {
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 2.5rem;
-    padding-left: 3.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 2.5rem;
+  padding-left: 3.75rem;
 }
 
 .carousel__image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1260px) {
-    .carousel {
-        padding: 1.875rem 0 1.875rem 0;
-    }
+  .carousel {
+    padding: 1.875rem 0 1.875rem 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .carousel__title {
-        padding-left: .9375rem;
-    }
+  .carousel__title {
+    padding-left: 0.9375rem;
+  }
 }
-
-
-
-  

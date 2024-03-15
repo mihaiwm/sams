@@ -1,4 +1,4 @@
-@import './styles/main.scss';
+@import "./styles/main.scss";
 
 * {
   margin: 0;
@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: $font-primary;
 }

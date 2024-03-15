@@ -1,175 +1,172 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .card {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 4.6875rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4.6875rem;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 
-    &:first-child {
-        padding-left: 3.75rem;
-    }
+  &:first-child {
+    padding-left: 3.75rem;
+  }
 }
 
 .card__visual {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #f8f8f8;
-    padding: 3.75rem 3.75rem;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 3.75rem 3.75rem;
+  height: 100%;
 }
 
 .card__colors {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: .375rem;
-    height: 3.125rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.375rem;
+  height: 3.125rem;
 }
 
 .card__color {
-    width: .75rem;
-    height: .75rem;
-    background-color: black;
-    border-radius: 50%;
-    list-style: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: black;
+  border-radius: 50%;
+  list-style: none;
 
-    &.card__red {
-        background-color: rgb(157, 27, 27);
-    }
+  &.card__red {
+    background-color: rgb(157, 27, 27);
+  }
 
-    &.card__blue {
-        background-color: rgb(31, 31, 122);
-    }
+  &.card__blue {
+    background-color: rgb(31, 31, 122);
+  }
 
-    &.card__green {
-        background-color: rgb(50, 110, 50);
-    }
+  &.card__green {
+    background-color: rgb(50, 110, 50);
+  }
 
-    &.card__gray {
-        background-color: rgb(126, 110, 110);
-    }
+  &.card__gray {
+    background-color: rgb(126, 110, 110);
+  }
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-
 .card__info {
-    width: 90%;
+  width: 90%;
 }
 
 .card__imageWrapper {
-    max-width: 180px;
+  max-width: 180px;
 }
 
 .card__image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .card__wrapper {
-    position: relative;
-    width: 90%;
-    border-left: 0.5px solid rgb(223, 219, 219);
-    border-right: 0.5px solid rgb(223, 219, 219);
-    padding: .625rem;
+  position: relative;
+  width: 90%;
+  border-left: 0.5px solid rgb(223, 219, 219);
+  border-right: 0.5px solid rgb(223, 219, 219);
+  padding: 0.625rem;
 
-    &:not(:first-child) {
-        padding: .625rem .626rem 6.25rem;
-        border-bottom: 0.5px solid rgb(223, 219, 219);;
-    }
+  &:not(:first-child) {
+    padding: 0.625rem 0.626rem 6.25rem;
+    border-bottom: 0.5px solid rgb(223, 219, 219);
+  }
 
-    &:not(:last-child) {
-        border-top: 0.5px solid rgb(223, 219, 219);
-    }
-
+  &:not(:last-child) {
+    border-top: 0.5px solid rgb(223, 219, 219);
+  }
 }
 
 .card__wrapper--invisible {
-    width: 90%;
-    padding: .625rem;
-    border-left: 0.5px solid transparent;
-    border-right: 0.5px solid transparent;
+  width: 90%;
+  padding: 0.625rem;
+  border-left: 0.5px solid transparent;
+  border-right: 0.5px solid transparent;
 
-    &:not(:first-child) {
-        padding: .625rem .626rem 6.25rem;
-        border-bottom: 0.5px solid transparent;
-    }
+  &:not(:first-child) {
+    padding: 0.625rem 0.626rem 6.25rem;
+    border-bottom: 0.5px solid transparent;
+  }
 
-    &:not(:last-child) {
-        border-top: 0.5px solid transparent;
-    }
+  &:not(:last-child) {
+    border-top: 0.5px solid transparent;
+  }
 }
 
 .card__brand {
-    width: 100%;
-    padding-top: .9375rem;
-    font-size: 1.375rem;
-    font-weight: 900;
+  width: 100%;
+  padding-top: 0.9375rem;
+  font-size: 1.375rem;
+  font-weight: 900;
 }
 
 .card__description {
-    padding-top: .3125rem;
-    font-size: 1.125rem;
+  padding-top: 0.3125rem;
+  font-size: 1.125rem;
 }
 
 .card__price {
-    font-weight: 900;
-    padding-top: .125rem;
-    font-size: 1.125rem;
+  font-weight: 900;
+  padding-top: 0.125rem;
+  font-size: 1.125rem;
 }
 
 .card__buttonWrapper {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    bottom: .0;
-    left: 0;
-    margin: 0 auto;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
 }
 
 .card__button {
-    width: 100%;
-    padding: 15px 30px;
-    background-color: black;
-    color: white;
-    font-family: $font-primary;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 1.125rem;
-    border: 2px solid transparent;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  font-family: $font-primary;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.125rem;
+  border: 2px solid transparent;
 
-    &:hover {
-        cursor: pointer;
-        background-color: white;
-        color: black;
-        border: 2px solid black;
-    }
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
 }
 
-
 @media screen and (max-width: 1280px) {
-    .card__visual {
-        padding: 3.75rem 2.8125rem;
-    }
+  .card__visual {
+    padding: 3.75rem 2.8125rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .card {
-        &:first-child {
-            padding-left: .9375rem;
-        }
+  .card {
+    &:first-child {
+      padding-left: 0.9375rem;
     }
-    .card__visual {
-        padding: 3.75rem 1.875rem;
-    }
+  }
+  .card__visual {
+    padding: 3.75rem 1.875rem;
+  }
 }

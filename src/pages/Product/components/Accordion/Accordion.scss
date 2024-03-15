@@ -1,27 +1,26 @@
-@import '../../../../styles/main.scss';
+@import "../../../../styles/main.scss";
 
 .accordion {
-    width: 100%;
-		border-top: 1px solid #c7c7c7;
-		padding: 1.25rem 0;
+  width: 100%;
+  border-top: 1px solid #c7c7c7;
+  padding: 1.25rem 0;
 
-		&:last-child {
-			border-bottom: 1px solid #c7c7c7;
-		}
+  &:last-child {
+    border-bottom: 1px solid #c7c7c7;
+  }
 }
 
 .accordion__head {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-
-	&:hover {
-			cursor: pointer;
-	}
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .accordion__title {
-	text-transform: uppercase;
-	letter-spacing: 0.6px;
-	font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 1rem;
 }

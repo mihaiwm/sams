@@ -1,5 +1,5 @@
 import React from "react";
-import './Benefit.scss';
+import "./Benefit.scss";
 
 interface IBenefit {
   imageSrc: string;

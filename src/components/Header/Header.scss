@@ -1,48 +1,48 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .header {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	z-index: 999;
-	background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
 }
 
 .header__logo-wrapper {
-	max-width: 11.875rem;
-	height: auto;
+  max-width: 11.875rem;
+  height: auto;
 }
 
 .header__logo {
-	min-width: 100%;
-	height: 100%;
-	cursor: pointer;
+  min-width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .header__topBar {
-	display: flex;
-	justify-content: space-between;
-	padding-inline: 3.75rem;
-	min-height: 3.4375rem;
-	align-items: center;
-	border-bottom: 1px solid #c7c7c7;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3.75rem;
+  min-height: 3.4375rem;
+  align-items: center;
+  border-bottom: 1px solid #c7c7c7;
 }
 
 .header__utilityIcons {
-	display: flex;
-	gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .header__icon {
-	list-style: none;
+  list-style: none;
 
-	&:hover {
-		cursor: pointer;
-	}
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-@media screen and (max-width:768px) {
-	.header__topBar {
-		padding-inline: 1.875rem;
-	}
+@media screen and (max-width: 768px) {
+  .header__topBar {
+    padding-inline: 1.875rem;
+  }
 }
