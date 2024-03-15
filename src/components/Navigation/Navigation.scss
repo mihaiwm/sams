@@ -62,10 +62,18 @@
 }
 
 .navigation__inputWrapper {
+  position: relative;
+}
+
+.navigation__inputIcon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 20px;
+  bottom: -6px;
 }
 
 .navigation__searchInput {
-  padding: 0.3125rem 0 0.3125rem 1.25rem;
+  padding: 0.3125rem 0 0.3125rem 2.25rem;
   border: 0;
   border-bottom: 1px solid #c7c7c7;
   font-size: 14px;

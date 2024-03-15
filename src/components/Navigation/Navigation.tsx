@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Navigation.scss";
+import { CiSearch } from "react-icons/ci";
+
 
 interface INavigation {
   isOpened: boolean;
@@ -27,6 +29,7 @@ function Navigation({ isOpened, isMobile }: INavigation) {
               className="navigation__searchInput"
               placeholder="Search"
             />
+            <CiSearch size={20} className="navigation__inputIcon"/>
           </div>
         )}
         <ul className="navigation__links">
