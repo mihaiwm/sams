@@ -77,7 +77,6 @@ function ProductMain() {
         </div>
       </div>
       <div className="productMain__rightSide">
-        <div className="productMain__firstRow">
           <div className="productMain__imageWrapper">
             <img
               className="productMain__image"
@@ -85,8 +84,6 @@ function ProductMain() {
               alt=""
             />
           </div>
-        </div>
-        <div className="productMain__secondRow">
           <div className="productMain__imageWrapper">
             <img
               className="productMain__image"
@@ -115,16 +112,6 @@ function ProductMain() {
               alt=""
             />
           </div>
-        </div>
-        <div className="productMain__thirdRow">
-          <div className="productMain__imageWrapper">
-            <img
-              className="productMain__image"
-              src="https://www.samsonite.co.uk/dw/image/v2/AATF_PRD/on/demandware.static/-/Sites-samsonite-product-catalog/default/dw0b14a3ec/images/salsify/2b7d4558df45f038122702bf982dceb9a2fac774_s--_ZxWiRq5--_fl_clip_pg_1_e_trim_c_fit_w_2000_h_3000_u_tcrttuyt8xafi2acibgb_fl_layer_apply_e_make_transparent.png?sw=600&sh=900"
-              alt=""
-            />
-          </div>
-        </div>
       </div>
     </div>
   );
