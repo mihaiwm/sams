@@ -26,6 +26,7 @@ function Carousel({
     dots: false,
     infinite: false,
     speed: 500,
+    arrows: false,
     slidesToShow: isMobile ? slidesToShowMobile : slidesToShowDesktop,
     slidesToScroll: isMobile ? slidesToShowMobile : slidesToShowDesktop,
   };
