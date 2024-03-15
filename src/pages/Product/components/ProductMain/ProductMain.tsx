@@ -1,7 +1,9 @@
 import React from "react";
 import "./ProductMain.scss";
+import { useMediaQuery } from "react-responsive";
 
 function ProductMain() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <div className="productMain">
       <div className="productMain__leftSide">
@@ -69,7 +71,7 @@ function ProductMain() {
         </div>
         <div className="productMain__buttonsWrapper">
           <button className="productMain__personaliseButton">
-            Personalise your case
+            {isMobile ? `£359.00 AVAILABLE` : 'Personalise your case '} 
           </button>
           <button className="productMain__addToCart">Add to Cart</button>
         </div>

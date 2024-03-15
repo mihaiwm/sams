@@ -1,0 +1,96 @@
+@import "../../styles/main.scss";
+
+.welfare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.welfare__benefit {
+  width: 100%;
+  height: 100%;
+  padding: 3.125rem 3.75rem;
+  display: flex;
+  gap: 0.625rem;
+
+  &:nth-child(1) {
+    border: 1px solid #c7c7c7;
+    border-bottom: none;
+  }
+
+  &:nth-child(2) {
+    border: 1px solid #c7c7c7;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  &:nth-child(3) {
+    border: 1px solid #c7c7c7;
+  }
+
+  &:nth-child(4) {
+    border: 1px solid #c7c7c7;
+    border-left: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.welfare__title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 0.9375rem;
+  font-weight: bold;
+}
+
+.welfare__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-inline: 1.25rem;
+}
+
+.welfare__iconWrapper {
+  min-width: 50px;
+}
+
+.welfare__icon {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1260px) {
+  .welfare__description {
+    display: none;
+  }
+
+  .welfare__benefit {
+    padding: 1.875rem 1.875rem;
+  }
+
+  .welfare__title {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welfare {
+    grid-template-columns: 1fr;
+  }
+
+  .welfare__benefit {
+    padding: 1.5625rem 1.875rem;
+
+    &:nth-child(4) {
+      border: 1px solid #c7c7c7;
+      border-top: none;
+    }
+  }
+
+  .welfare__iconWrapper {
+    min-width: 2.5rem;
+  }
+}

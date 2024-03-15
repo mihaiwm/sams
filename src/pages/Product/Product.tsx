@@ -6,6 +6,8 @@ import Hero from "../../components/Hero/Hero";
 import Carousel from "../../components/Carousel/Carousel";
 import Benefit from "../../components/Benefit/Benefit";
 import Card from "../../components/Card/Card";
+import Newsletter from "../../components/Newsletter/Newsletter";
+import Welfare from "../../components/Welfare/Welfare";
 
 function Product() {
   return (
@@ -91,6 +93,8 @@ function Product() {
           colors={["red", "green", "blue", "white", "gray"]}
         />
       </Carousel>
+      <Welfare/>
+      <Newsletter/>
     </div>
   );
 }

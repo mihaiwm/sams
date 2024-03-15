@@ -3,7 +3,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4.6875rem;
 
   &:hover {
     cursor: pointer;
@@ -155,6 +154,11 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .card {
+    &:first-child {
+      padding-left: 1.25rem;
+    }
+  }
   .card__visual {
     padding: 3.75rem 2.8125rem;
   }

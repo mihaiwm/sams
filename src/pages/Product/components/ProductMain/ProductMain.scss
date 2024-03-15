@@ -342,7 +342,7 @@
   }
 
   .productMain__buttonsWrapper {
-    padding: 0.9375rem 1.25rem;
+    padding: 0;
     justify-content: center;
   }
 
@@ -351,6 +351,24 @@
     bottom: 0;
     width: 100%;
     z-index: 9;
+    gap: 0;
+  }
+
+  .productMain__addToCart {
+    width: 100%;
+    border: 1px solid black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .productMain__personaliseButton {
+    width: 100%;
+    background-color: rgb(0, 195, 168);
+    color: white;
+    border: 1px solid rgb(0, 195, 168);
   }
 
   .productMain__head {
@@ -364,6 +382,14 @@
   }
 
   .productMain__breadcrumb {
+    display: none;
+  }
+
+  .productMain__secondRow {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .productMain__thirdRow {
     display: none;
   }
 }
